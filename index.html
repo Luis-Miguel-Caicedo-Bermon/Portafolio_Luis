@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - One Piece Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <box-icon onclick="cambiarTema()" class="tema" name='sun'></box-icon>
+    <!-- <button onclick="cambiarTema()" class="tema">&#9728</button> -->
+    <div class="colores">
+        <div class="color1" onclick="color1()"></div>
+        <div class="color2" onclick="color2()"></div>
+        <div class="color3" onclick="color3()"></div>
+    </div>
+    <div class="superior"><div class="nombre"><a href="#sobre_mi">Luis Miguel</a></div> <div class="links"><a href="#inicio">Inicio</a><a href="#proyectos">Proyectos</a></div></div>
+    <div class="container">
+        <div id="inicio">
+            <h1>¡Hola soy Luis Miguel!</h1>
+            <p>Inspirado en la aventura de One Piece.</p>
+            <button>BUTTON</button>
+        </div>
+        <div id="proyectos">
+            <h2>PROYECTOS</h2>
+            <p>realizados a lo largo del viaje</p>
+            <div class="py">
+                <div class="p1">
+                    <h3>Pokédex</h3>
+                    <img src="/images/poke.png" class="img_p">
+                    <p>Utilizando la pokéApi para recrear la Pokédex podemos buscar entre una gran variedad de pokemons por nombre o numero.</p>
+                    <a href="https://github.com/Luis-Miguel-Caicedo-Bermon/javascript_CaicedoBermonLuisMiguel/tree/main/Dia_9">
+                        <box-icon type='logo' name='github' class="git"></box-icon>
+                    </a>
+                    <a href="https://luis-miguel-caicedo-bermon.github.io/javascript_CaicedoBermonLuisMiguel/Dia_9/index.html">
+                        <box-icon type='solid' name='window-alt' class="git"></box-icon>
+                    </a>
+                </div>
+                <div class="p2">
+                    
+                </div>
+                <div class="p3">
+                    
+                </div>
+            </div>
+        </div>
+        <div id="sobre_mi">
+            <h2>SOBRE MI</h2>
+        </div>
+    </div>
+</body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+</html>

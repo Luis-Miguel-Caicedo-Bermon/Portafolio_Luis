@@ -1,0 +1,158 @@
+:root {
+    --color-fondo: #1C1C1C;
+    --color-letra: #D4A017;
+    --letra-normal: white;
+    --color-uno: #32d74b;
+    --color-dos: #007aff;
+    --color-tres: #D4A017;
+    --color-borde: white;
+}
+body {
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--color-fondo);
+}
+
+*::-webkit-scrollbar-thumb {
+
+    border: 2px solid var(--color-fondo);
+    background-color: var(--color-letra);
+    border-radius: 5px;
+}
+
+.container {
+    text-align: center;
+    transition: all 0.5s;
+    padding: 0 50px;
+    height: 100vh;
+    background-color: var(--color-fondo);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.superior{
+    display: flex;
+    justify-content: space-around;
+    width: calc(100vw - 100px);
+    height: 6%;
+    align-items: center;
+    font-size: clamp(1rem,4vw,1.5rem);
+    font-weight: 600;
+    border-bottom: var(--color-letra) solid;
+    color: var(--color-letra);
+    position: fixed;
+    background-color: var(--color-fondo);
+    margin: 0 50px;
+}
+
+.links{
+    display: flex;
+    gap: 20%;
+}
+.links a,.nombre a{
+    text-decoration: none;
+    color: var(--color-letra);
+}
+
+h1 {
+    margin-top: 30vh;
+    font-size: 2.5em;
+    color: var(--color-letra);
+}
+
+p{
+    color: var(--letra-normal);
+}
+.container button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    background-color: var(--color-letra);
+    color: white;
+}
+
+.container button:hover {
+    opacity: 80%;
+}
+.colores{
+    position: fixed;
+    top: calc(100vh - 120px);
+    left: calc(100vw - 50px);
+    width: 40px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-left: var(--color-borde) solid 1px;
+}
+.colores div {
+    width: 20px;
+    height: 20px;
+    border: var(--color-borde) solid 1px;
+    border-radius: 5px;
+}
+.color1{
+    background-color: var(--color-uno);
+}
+.color2{
+    background-color: var(--color-dos);
+}
+.color3{
+    background-color: var(--color-tres);
+}
+.tema{
+    fill: var(--color-letra);
+    position: fixed;
+    background-color: inherit;
+    top: 13px;
+    left: 15px;
+}
+#inicio , #proyectos, #sobre_mi{
+    height: calc(100vh - 2px);
+    border: transparent solid 1px;
+}
+h2{
+    margin-top: 10vh;
+    color: var(--color-letra);
+}
+.py{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.p1,.p2,.p3{
+    margin-top: 2rem;
+    width: 30vw;
+    min-width: 16rem;
+}
+.p1 p,.p2 p,.p3 p{
+    padding: 0 10%;
+    text-align: justify;
+}
+h3{
+    font-size: 1.5rem;
+    color: var(--color-letra);
+}
+.img_p{
+    margin: 0 10%;
+    border-radius: 10px;
+    width: 70%;
+}
+.git{
+    fill: var(--color-letra);
+    width: 60px;
+    height: 40px;
+}
