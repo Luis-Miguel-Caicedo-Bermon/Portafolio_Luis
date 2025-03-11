@@ -31,7 +31,6 @@ body {
 .container {
     text-align: center;
     transition: all 0.5s;
-    padding: 0 50px;
     height: 100vh;
     background-color: var(--color-fondo);
     overflow-y: scroll;
@@ -41,7 +40,7 @@ body {
 .superior{
     display: flex;
     justify-content: space-around;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 110px);
     height: 6%;
     align-items: center;
     font-size: clamp(1rem,4vw,1.5rem);
@@ -140,10 +139,7 @@ h2{
 .pys{
     margin-top: 2rem;
     width: 30vw;
-    min-width: 16rem;
-    /* box-shadow: inset 2px -2px 10px var(--color-letra);
-    border-radius: 10px;
-    padding-bottom: 2rem; */
+    min-width: 23rem;
 }
 .pys p{
     margin-top: 2rem;
@@ -155,9 +151,9 @@ h3{
     color: var(--color-letra);
 }
 .img_p{
-    margin: 0 10%;
+    margin: 0 5%;
     border-radius: 10px;
-    width: 70%;
+    width: 80%;
 }
 .git{
     fill: var(--color-letra);
@@ -189,7 +185,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 8vh;
     margin-top: 2rem;
     margin-bottom: 6rem;
 }
@@ -198,6 +194,7 @@ h3{
     min-width: 20rem;
     color: var(--letra-normal);
     font-size: clamp(1rem, 2vw, 1.4rem);
+    text-align: justify;
 }
 .card{
     border: var(--color-letra)solid;

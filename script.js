@@ -25,30 +25,6 @@ function cambiarTema() {
     let color33 = getComputedStyle(document.documentElement).getPropertyValue("--color-tres");
     color33 = color33 === "#D4A017"?"#4B4F55":"#D4A017";
     document.documentElement.style.setProperty("--color-tres", color33);
-
-    // document.body.style.backgroundColor = 
-    //     document.body.style.backgroundColor === "var(--fondo-oscuro)" ? "var(--fondo-claro)" : "var(--fondo-oscuro)";
-    
-    // let container = document.querySelector(".container");
-    // container.style.backgroundColor = 
-    //     container.style.backgroundColor === "var(--fondo-oscuro)" ? "var(--fondo-claro)" : "var(--fondo-oscuro)";
-    
-    // let letra = document.querySelectorAll(".letra");
-    // letra.forEach(e => {
-    //     e.style.color = 
-    //     e.style.color === "var(--texto-oscuro)" ? "var(--texto-claro)" : "var(--texto-oscuro)";
-    // });
-
-    // let borde = document.querySelector('.borde');
-    // borde.style.borderBottom  = 
-    //     borde.style.borderBottom  === "var(--texto-oscuro) solid" ? "var(--texto-claro) solid" : "var(--texto-oscuro) solid";
-
-    // let cambiar = document.querySelector(".cambiar");
-    // cambiar.style.backgroundColor = 
-    //     cambiar.style.backgroundColor === "var(--fondo-oscuro)" ? "var(--fondo-claro)" : "var(--fondo-oscuro)";
-    
-    // color_fondo = color_fondo === "var(--fondo-oscuro)" ? "var(--fondo-claro)" : "var(--fondo-oscuro)";
-    // color_letra = color_letra === "var(--texto-oscuro)" ? "var(--texto-claro)" : "var(--texto-oscuro)";
 }
 
 function color1(){
@@ -70,17 +46,3 @@ document.addEventListener("mousemove", (event) => {
     container.style.background = `radial-gradient(50px at ${event.pageX}px ${event.pageY}px, transparent 75%, ${color_letra}, transparent 80%)`;
     container.style.backgroundColor = color_fondo;
 });
-// let cont = 0;
-// let lastScroll = window.scrollY;
-// document.addEventListener("scroll", (e)=>{
-//     let currentScroll = window.scrollY;
-//     if (currentScroll < lastScroll) {
-//         cont--;
-//         document.querySelectorAll(".container")[cont].scrollIntoView({ behavior: "smooth" });
-//     }
-//     else{
-//         cont++;
-//         document.querySelectorAll(".container")[cont].scrollIntoView({ behavior: "smooth" });
-//     }
-//     lastScroll = currentScroll;
-// })
