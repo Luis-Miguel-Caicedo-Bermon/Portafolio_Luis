@@ -169,6 +169,17 @@ h3{
     height: 10%;
     position: fixed;
     top: calc(100vh - 10%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer p{
+    margin: 0;
+    opacity: 50%;
+    font-size: clamp(0.5rem,1vw,1rem);
+}
+.icons{
     display: flex;
     justify-content: center;
     align-items: center;
